@@ -17,6 +17,21 @@ The project goal is to operationalize this working, machine learning microservic
 * Deploy a container using Kubernetes and make a prediction
 * Upload a complete Github repo with CircleCI to indicate that your code has been tested
 
+## The files included are:
+```sh
+* /.circleci : CircleCI configuration file for running the tests
+* /model_data : Housing model data
+* /output_txt_files : Log of docker and kubernetes output in my local PC.
+* Dockerfile : Dockerfile for building the image 
+* Makefile : includes instructions on environment setup and lint tests
+* app.py : Python flask app that serves out predictions (inference) about housing prices through API calls
+* make_prediction.sh : Send a request to the Python flask app to get a prediction, for localhost 
+* requirements.txt : Install any dependencies 
+* run_docker.sh : File that gets Docker running, locally
+* run_kubernetes.sh : File that runs the app in kubernetes
+* upload_docker.sh : To upload the image to docker
+```
+
 **The final objective has been operationalizing production microservices that runs a Machine Learning prediction API.**
 
 ---
